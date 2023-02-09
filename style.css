@@ -136,7 +136,6 @@ nav a:hover {
 
 .about-buttons a {
     flex-basis: 33%;
-    margin: 0 1rem;
     font-size: 1.5rem;
     padding: 1rem;
     background-color: #ECB365;
@@ -316,6 +315,7 @@ footer ul li a{
 .email-footer, .email-address address {
     padding: 0 2rem;
     color: beige;
+    text-align: center;
 }
 
 /*
@@ -423,7 +423,7 @@ max: hasta npx
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     p {
@@ -448,8 +448,8 @@ max: hasta npx
         width: 75%;
     }
 
-    .about-buttons button {
-        margin: 0.8em 0;
+    .about-buttons a {
+        margin: 0.8rem 1rem;
     }
 }
 
