@@ -201,7 +201,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 0.5rem;
 }
 
 .proyects-cards article p {
@@ -403,17 +403,6 @@ max: hasta npx
     }
 }
 
-@media (max-width: 390px) {
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2.75rem;
-    }
-}
-
 @media (max-width: 320px) {
 
     .container {
@@ -425,7 +414,7 @@ max: hasta npx
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     p {
