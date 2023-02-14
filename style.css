@@ -149,6 +149,11 @@ nav a:hover {
     text-transform: uppercase;
 }
 
+.about-buttons a:hover {
+    background-color: #064663;
+    color: beige;
+}
+
 .about-buttons a:nth-child(3) {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -246,6 +251,14 @@ nav a:hover {
     border-top: 1px solid black;
 }
 
+#card-1 a:hover {
+    color: beige;
+}
+
+#card-2 a:hover {
+    color: beige;
+}
+
 /* CONTACT */
 
 #contact {
@@ -313,6 +326,11 @@ form button {
     box-shadow: 2px 2px 5px black;
 }
 
+form button:hover {
+    background-color: #064663;
+    color: beige;
+}
+
 /* FOOTER */
 
 footer {
@@ -336,6 +354,12 @@ footer ul li a{
     text-decoration: none;
     padding: 0 1rem;
     color: beige;
+}
+
+footer ul li a:hover{ 
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
 }
 
 .email-address {
