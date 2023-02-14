@@ -398,6 +398,10 @@ max: hasta npx
     .about-buttons a:last-child {
         display: initial;
     }
+
+    .proyects-cards article p {
+        padding: 2.5rem 4.5rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -408,6 +412,10 @@ max: hasta npx
 
     form {
         width: 95%;
+    }
+
+    .proyects-cards article p {
+        padding: 2.5rem 3rem;
     }
 }
 
