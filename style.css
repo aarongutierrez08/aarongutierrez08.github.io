@@ -298,6 +298,7 @@ form {
 form label {
     font-size: 2rem;
     padding-left: 0.1rem;
+    text-shadow: 2px 2px 5px black;
 }
 
 form input, form textarea {
