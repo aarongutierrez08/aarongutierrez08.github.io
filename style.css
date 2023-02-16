@@ -308,6 +308,10 @@ form label {
     text-shadow: 2px 2px 5px black;
 }
 
+form label span {
+    color: darkred;
+}
+
 form input, form textarea {
     width: 100%;
     border-radius: 10px;
@@ -389,6 +393,7 @@ footer ul li a:active {
     padding: 0 2rem;
     color: beige;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 /*
