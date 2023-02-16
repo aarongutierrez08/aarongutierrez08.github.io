@@ -260,12 +260,12 @@ nav a:active {
     border-top: 1px solid black;
 }
 
-#card-1 a:hover {
+#card-1 a:hover, #card-1 a:focus, #card-2 a:hover, #card-2 a:focus {
     color: beige;
 }
 
-#card-2 a:hover {
-    color: beige;
+#card-1 a:active, #card-2 a:active {
+    letter-spacing: 0.2rem;
 }
 
 /* CONTACT */
@@ -463,12 +463,6 @@ max: hasta npx
 
 @media (max-width: 650px) {
 
-    .email-address {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     h1 {
         white-space: initial;
         font-size: 4.5rem;
@@ -499,6 +493,16 @@ max: hasta npx
     
     .about-buttons a:last-child {
         display: none;
+    }
+
+    .email-address {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email-footer {
+        padding: 0 0 1rem 0;
     }
 }
 
