@@ -309,7 +309,7 @@ form label {
 }
 
 form label span {
-    color: darkred;
+    color: #ff4000;
 }
 
 form input, form textarea {
