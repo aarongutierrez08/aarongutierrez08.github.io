@@ -14,6 +14,7 @@ html {
 }
 
 h1 {
+    margin-top: 5rem;
     font-size: 5rem;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px black;
@@ -47,10 +48,6 @@ section {
     align-items: center;
 }
 
-.section-title {
-    margin-top: 5rem;
-}
-
 /* HEADER */
 
 header {
@@ -80,11 +77,16 @@ nav a {
     text-transform: uppercase;
     font-weight: bold;
     color: beige;
+    border-radius: 5px;
 }
 
-nav a:hover {
-    background-color: #ECB365;
-    color: #041C32;
+nav a:hover, nav a:focus {
+    background-color: beige;
+    color: black;
+}
+
+nav a:active {
+    letter-spacing: 0.2rem;
 }
 
 /* ABOUT */
@@ -151,9 +153,13 @@ nav a:hover {
     text-transform: uppercase;
 }
 
-.about-buttons a:hover {
+.about-buttons a:hover, .about-buttons a:focus {
     background-color: #064663;
     color: beige;
+}
+
+.about-buttons a:active {
+    letter-spacing: 0.2rem;
 }
 
 .about-buttons a:nth-child(3) {
@@ -325,14 +331,18 @@ form button {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    border-style: none;
+    cursor: pointer;
     border-radius: 15px;
     box-shadow: 2px 2px 5px black;
 }
 
-form button:hover {
+form button:hover, form button:focus {
     background-color: #064663;
     color: beige;
+}
+
+form button:active {
+    letter-spacing: 0.2rem;
 }
 
 /* FOOTER */
@@ -360,10 +370,14 @@ footer ul li a{
     color: beige;
 }
 
-footer ul li a:hover{ 
+footer ul li a:hover, footer ul li a:focus { 
     background-color: beige;
     color: black;
     border-radius: 5px;
+}
+
+footer ul li a:active {
+    letter-spacing: 0.2rem;
 }
 
 .email-address {
