@@ -71,7 +71,7 @@ nav {
 
 nav a {
     flex-grow: 1;
-    padding: 0.3rem 0;
+    padding: 0.25rem 0.25rem;
     font-size: 1.75rem;
     text-align: center;
     text-decoration: none;
@@ -79,10 +79,6 @@ nav a {
     font-weight: bold;
     color: beige;
     border-radius: 5px;
-}
-
-nav a:nth-child(2) {
-    padding: 0.3rem 0.5rem;
 }
 
 nav a:hover, nav a:focus {
@@ -487,6 +483,10 @@ max: hasta npx
         font-size: 1.25rem;
     }
 
+    header nav a {
+        font-size: 1.5rem;
+    }
+
     .about-buttons {
         flex-direction: column;
         padding: 0;
@@ -537,6 +537,18 @@ max: hasta npx
     button {
         font-size: 1rem;
     }
+
+    header {
+        height: 3rem;
+    }
+
+    header nav a {
+        font-size: 1.25rem;
+    }
+
+    #about-me {
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 320px) {
@@ -557,16 +569,8 @@ max: hasta npx
         font-size: 1.25rem;
     }
 
-    header {
-        height: 3rem;
-    }
-
     header nav a {
-        font-size: 1.25rem;
-    }
-
-    #about-me {
-        margin-top: 3rem;
+        font-size: 1.15rem;
     }
 
     .about-buttons a:nth-child(3) {
