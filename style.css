@@ -1,15 +1,26 @@
+:root {
+    --primary-bg-section-color: #041C32;
+    --secondary-bg-section-color: #064663;
+    --text-section-color: #ECB365;
+    --bg-header-footer-color: black;
+    --text-header-footer-color: beige;
+    --shadow-color: black;
+    --bg-button-color: #ECB365;
+    --text-button-color: #041C32;
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    color: #ECB365;
+    color: var(--text-section-color);
 }
 
 html {
     font-size: 16px;
-    /*font-family: 'Courier New', Courier, monospace;*/
-    font-family: 'Roboto';
+    font-family: 'Courier New', Courier, monospace;
+    /*font-family: 'Roboto';*/
     scroll-behavior: smooth;
     background-color: black;
 }
@@ -18,7 +29,7 @@ h1 {
     margin-top: 5rem;
     font-size: 5rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--shadow-color);
     white-space: nowrap;
     text-align: center;
 }
@@ -26,13 +37,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--shadow-color);
     text-align: center;
 }
 
 p {
     font-size: 1.5rem;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 section {
@@ -61,7 +72,7 @@ header {
     background-color: black;
 }
 
-nav {
+header nav {
     width: 100%;
     height: 100%;
     display: flex;
@@ -69,7 +80,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+header nav a {
     flex-grow: 1;
     padding: 0.25rem 0.25rem;
     font-size: 1.75rem;
@@ -77,16 +88,16 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    color: beige;
+    color: var(--text-header-footer-color);
     border-radius: 5px;
 }
 
-nav a:hover, nav a:focus {
-    background-color: beige;
-    color: black;
+header nav a:hover, header nav a:focus {
+    background-color: var(--text-header-footer-color);
+    color: var(--bg-header-footer-color);
 }
 
-nav a:active {
+header nav a:active {
     letter-spacing: 0.2rem;
 }
 
@@ -94,7 +105,7 @@ nav a:active {
 
 #about-me {
     margin-top: 4rem;
-    background-color: #041C32;
+    background-color: var(--primary-bg-section-color);
 }
 
 #about-me .container {
@@ -116,7 +127,7 @@ nav a:active {
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 .about-text {
@@ -129,7 +140,7 @@ nav a:active {
     line-height: 3rem;
     text-align: justify;
     padding: 1rem;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--shadow-color);
 }
 
 .about-buttons {
@@ -144,10 +155,10 @@ nav a:active {
     font-size: 1.5rem;
     margin: 0 1rem;
     padding: 1rem;
-    background-color: #ECB365;
-    color: #041C32;
+    background-color: var(--bg-button-color);
+    color: var(--text-button-color);
     border-radius: 15px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px var(--shadow-color);
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -176,7 +187,7 @@ nav a:active {
 /* PROYECTS */
 
 #proyects {
-    background-color: #064663;
+    background-color: var(--secondary-bg-section-color);
 }
 
 #proyects .container {
@@ -193,7 +204,7 @@ nav a:active {
     margin: 0 2rem;
     border: 2px solid #064663;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px var(--shadow-color);
     background-color: #041C32;
     display: flex;
     flex-direction: column;
@@ -272,14 +283,14 @@ nav a:active {
 /* CONTACT */
 
 #contact {
-    background-color: #041C32;
+    background-color: var(--primary-bg-section-color);
 }
 
 #contact .container {
     flex-direction: column;
 }
 
-form {
+#contact form {
     margin: 5rem 0;
     width: 85%;
     display: flex;
@@ -303,17 +314,17 @@ form {
     margin-bottom: 2.5rem;
 }
 
-form label {
+#contact form label {
     font-size: 2rem;
     padding-left: 0.1rem;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px var(--shadow-color);
 }
 
-form label span {
+#contact form label span {
     color: #ff4000;
 }
 
-form input, form textarea {
+#contact form input, #contact form textarea {
     width: 100%;
     border-radius: 10px;
     font-size: 1.5rem;
@@ -327,33 +338,33 @@ form input, form textarea {
     height: 10rem;
 }
 
-form button {
+#contact form button {
     padding: 1rem 2.5rem;
     margin-top: 2rem;
-    background-color: #ECB365;
-    color: #041C32;
+    background-color: var(--bg-button-color);
+    color: var(--text-button-color);
     font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px var(--shadow-color);
 }
 
-form button:hover, form button:focus {
+#contact form button:hover, #contact form button:focus {
     background-color: #064663;
     color: beige;
 }
 
-form button:active {
+#contact form button:active {
     letter-spacing: 0.2rem;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: black;
+    background-color: var(--bg-header-footer-color);
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
@@ -372,12 +383,12 @@ footer ul {
 footer ul li a{ 
     text-decoration: none;
     padding: 0 1rem;
-    color: beige;
+    color: var(--text-header-footer-color);
 }
 
 footer ul li a:hover, footer ul li a:focus { 
-    background-color: beige;
-    color: black;
+    background-color: var(--text-header-footer-color);
+    color: var(--bg-header-footer-color);
     border-radius: 5px;
 }
 
@@ -392,7 +403,7 @@ footer ul li a:active {
 
 .email-footer, .email-address address {
     padding: 0 2rem;
-    color: beige;
+    color: var(--text-header-footer-color);
     text-align: center;
     font-size: 1.2rem;
 }
@@ -458,7 +469,7 @@ max: hasta npx
         width: 80%;
     }
 
-    form {
+    #contact form {
         width: 95%;
     }
 
@@ -511,7 +522,7 @@ max: hasta npx
         align-items: center;
     }
 
-    .email-footer {
+    .email-footer, .email-address address {
         padding: 0 0 1rem 0;
     }
 }
@@ -607,7 +618,7 @@ max: hasta npx
         padding: 2.5rem 0.5rem;
     }
 
-    form button {
+    #contact form button {
         max-width: 60%;
         padding-left: 1rem;
         padding-right: 1rem;
