@@ -14,9 +14,9 @@
     <header>
         <div class="container">    
             <nav>
-                <a href="#about-me">about me</a>
-                <a href="#proyects">proyects</a>
-                <a href="#contact">contact</a>
+                <a href="#about-me" aria-label="know about me">about me</a>
+                <a href="#proyects" aria-label="know about my projects">proyects</a>
+                <a href="#contact" aria-label="contact me by email">contact</a>
             </nav>
         </div>
     </header>
@@ -34,11 +34,11 @@
                     web development, accessibility, good practices and clean code.</p>
                 </div>
             </div>
-            <div class="about-buttons">
-                <a href="https://github.com/aarongutierrez08" target="blank">github</a>
-                <a href="https://www.linkedin.com/in/aarongutierrez08" target="blank">linkedin</a>
-                <a href="resources/Aaron_Gutierrez-CV.pdf" download="Aaron_Gutierrez-CV.pdf">download cv</a>
-                <a href="resources/Aaron_Gutierrez-CV.pdf" download="Aaron_Gutierrez-CV.pdf">cv</a>
+            <div class="about-buttons" role="tablist">
+                <a href="https://github.com/aarongutierrez08" target="blank" role="tab" aria-label="go to my Github profile">github</a>
+                <a href="https://www.linkedin.com/in/aarongutierrez08" target="blank" role="tab" aria-label="go to my Linkedin profile">linkedin</a>
+                <a href="resources/Aaron_Gutierrez-CV.pdf" download="Aaron_Gutierrez-CV.pdf" role="tab" aria-label="download my curriculum vitae">download cv</a>
+                <a href="resources/Aaron_Gutierrez-CV.pdf" download="Aaron_Gutierrez-CV.pdf" role="tab" aria-label="download my curriculum vitae">cv</a>
             </div>
         </div>
     </section>
@@ -52,7 +52,7 @@
                     </div>
                     <p>An emulation of the basic operation of an operating 
                     system with different schedulers, made with Python</p>
-                    <a href="https://github.com/aarongutierrez08/sistemas-operativos-UNQ" target="blank">more on github</a>
+                    <a href="https://github.com/aarongutierrez08/sistemas-operativos-UNQ" target="blank" aria-label="know more about operating system proyect on github">more on github</a>
                 </article>
                 <article id="card-2">
                     <div class="card-title">
@@ -60,7 +60,7 @@
                     </div>
                     <p>This responsive portfolio, made with HTML and CSS
                     </p>
-                    <a href="https://github.com/aarongutierrez08/aarongutierrez08.github.io" target="blank">more on github</a>
+                    <a href="https://github.com/aarongutierrez08/aarongutierrez08.github.io" target="blank" aria-label="know more about my portfolio proyect on github">more on github</a>
                 </article>
                 <article id="card-3">
                     <div class="card-title">
@@ -91,7 +91,7 @@
                     <label for="text">Text me<span>*</span></label>
                     <textarea id="text" type="text" name="text" aria-label="write the body email" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" aria-label="send the email">Send</button>
             </form>
         </div>
     </section>
