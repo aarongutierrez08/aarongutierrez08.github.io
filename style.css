@@ -70,6 +70,7 @@ header {
     width: 100%;
     height: 4rem;
     background-color: black;
+    z-index: 100;
 }
 
 header nav {
@@ -196,12 +197,13 @@ header nav a:active {
 
 .proyects-cards {
     margin: 5rem 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .proyects-cards article {
-    margin: 0 2rem;
+    margin: 0;
     border: 2px solid #064663;
     border-radius: 20px;
     box-shadow: 2px 2px 5px var(--shadow-color);
@@ -210,7 +212,38 @@ header nav a:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 33%;
+}
+
+#card-featured {
+    grid-column: span 2;
+    border-color: var(--bg-button-color);
+    box-shadow: 0 0 12px rgba(236, 179, 101, 0.25), 2px 2px 5px var(--shadow-color);
+}
+
+#card-featured .card-title {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url(resources/ai_img.jpg);
+    position: relative;
+    height: 10rem;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--bg-button-color);
+    color: var(--text-button-color);
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: none;
 }
 
 #card-1, #card-2 {
@@ -237,11 +270,27 @@ header nav a:active {
 
 #card-3 .card-title {
     background-image: linear-gradient(
-        0deg, 
-        rgba(0,0,0,0.7), 
+        0deg,
+        rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
     ),
     url(resources/klotski-img-1.jpg);
+}
+
+#card-4 .card-title {
+    background-image: linear-gradient(135deg, #1a4a2e 0%, #041C32 100%);
+}
+
+#card-5 .card-title {
+    background-image: linear-gradient(135deg, #2e1a4a 0%, #041C32 100%);
+}
+
+#card-6 .card-title {
+    background-image: linear-gradient(135deg, #4a2e1a 0%, #041C32 100%);
+}
+
+#card-7 .card-title {
+    background-image: linear-gradient(135deg, #04293A 0%, #064663 100%);
 }
 
 .card-title {
@@ -272,11 +321,11 @@ header nav a:active {
     border-top: 1px solid black;
 }
 
-#card-1 a:hover, #card-1 a:focus, #card-2 a:hover, #card-2 a:focus {
+.proyects-cards article a:hover, .proyects-cards article a:focus {
     color: beige;
 }
 
-#card-1 a:active, #card-2 a:active {
+.proyects-cards article a:active {
     letter-spacing: 0.2rem;
 }
 
@@ -415,11 +464,11 @@ max: hasta npx
 
 @media (max-width: 1200px) {
     .proyects-cards {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .proyects-cards article {
-        margin: 1rem 0;
+        margin: 0;
     }
 
     #card-1, #card-2 {
@@ -453,9 +502,13 @@ max: hasta npx
     .about-buttons a:nth-child(3) {
         display: none;
     }
-    
+
     .about-buttons a:last-child {
         display: initial;
+    }
+
+    .proyects-cards {
+        grid-template-columns: 1fr;
     }
 
     .proyects-cards article p {
